@@ -16,9 +16,9 @@ void Guide::produce(void* param) {
     int stepsSize = steps.size();
     for (int i = 0; i<stepsSize; i++){
         Observer * actual = steps.at(i);
-        // actual->process(param);
-        thread t(&Observer::process, actual, param);
-        t.join();
+        actual->process(param);
+        // thread t(&Observer::process, actual, param);
+        // t.join();
     }
     // for (Observer* actual : estudiantes) {
     //     thread t(&Observer::update, actual, curso); // parametros = (direccionDeMetodo, instancia/objeto, parametro)
