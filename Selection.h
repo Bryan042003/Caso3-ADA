@@ -5,16 +5,19 @@
 
 class Selection : public Observer{
     private:
-        vector<Point> points;
+        vector<Point> userPoints;
+        vector<Point> selectedPoints;
     public:
         Selection();
         ~Selection(){}
 
-        void setPoints(vector<Point>);
-        vector<Point> getPoint();
+        void setUserPoints(vector<Point>);
+        vector<Point> getUserPoints();
         void process(void*);
         void obtainAllPoints();
         void obtainNodeInfo(xml_node<>* node);
+        void analizePathChance(char* );
+        void addPoint(string);
 };
 
 #endif // SELECTION_H
