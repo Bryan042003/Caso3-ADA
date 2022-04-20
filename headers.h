@@ -10,6 +10,7 @@
 #include "rapidxml/rapidxml_utils.hpp" //Clase File
 #include <sstream>
 #include <fstream>
+//#include <string>
 
 using namespace std;
 using namespace rapidxml; //Namespace de la librería

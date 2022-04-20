@@ -44,6 +44,12 @@ bool isDigit(char character){
 
 void Selection::addPoint(string pointInfo){
     //must create the point here, validating all possibilities like white spaces or not white spaces and commas
+    //for(int i=0;i<pointInfo.size;i++){
+        //if(isdigit(pointInfo[i])==0){
+            //string numbersOfPoints = "";
+            //numbersOfPoints +=pointInfo[i];
+        //}
+    //}
 }
 
 void Selection::analizePathChance(char* info){
